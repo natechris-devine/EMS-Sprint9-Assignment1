@@ -1,0 +1,7 @@
+{
+  "name": "ems_Assignment1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
