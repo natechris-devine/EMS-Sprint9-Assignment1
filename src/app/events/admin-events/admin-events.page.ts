@@ -12,4 +12,8 @@ export class AdminEventsPage implements OnInit {
   ngOnInit() {
   }
 
+  toCreateEvent() {
+    window.location.href = 'new-event';
+  }
+
 }

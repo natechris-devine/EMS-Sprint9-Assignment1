@@ -1,9 +1,51 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>user-events</ion-title>
+  <ion-toolbar id="event-head">
+    <ion-title>User Events</ion-title>
+    <ion-button (click)="toCreateEvent()">Create Event</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <ion-list>
+    <ion-list-header>
+      <h2>Latest Events</h2>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <!-- <ion-icon name="calendar-sharp"></ion-icon> -->
+        <img src="https://lensdrop.imgix.net/photos/n2q7i/stock-photo-n2q7i.jpeg?mark=%2Fwm.png&markalign=center%2Cmiddle&markh=0.1&w=1200&h=650&s=8cba62580650c0db2a939eb542b7d223">
+      </ion-avatar>
+      <ion-label>
+        <h2>The Continental Breakfast</h2>
+        <h3>The Continental, NY</h3>
+        <h4>10/10/2020-11/10/2020<br>$5000</h4>
+        <p>A cordial breakfast for allies and associates of John Wick</p>
+      <ion-item>
+        <ion-label>Going?</ion-label>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <!-- <ion-icon name="calendar-sharp"></ion-icon> -->
+        <img src="https://lensdrop.imgix.net/photos/n2q7i/stock-photo-n2q7i.jpeg?mark=%2Fwm.png&markalign=center%2Cmiddle&markh=0.1&w=1200&h=650&s=8cba62580650c0db2a939eb542b7d223">
+      </ion-avatar>
+      <ion-label>
+        <h2>Unleash the Summer</h2>
+        <h3>Salt River, Clarendon</h3>
+        <h4>18/07/2020<br>$2067</h4>
+        <p>The cool down during covid event</p>
+      <ion-item>
+        <ion-label>Going?</ion-label>
+        <ion-toggle checked></ion-toggle>
+      </ion-item>
+      </ion-label>
+    </ion-item>
+
+
+  </ion-list>
 </ion-content>

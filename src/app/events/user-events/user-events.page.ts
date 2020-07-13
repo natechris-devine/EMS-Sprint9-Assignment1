@@ -12,4 +12,8 @@ export class UserEventsPage implements OnInit {
   ngOnInit() {
   }
 
+  toCreateEvent() {
+    window.location.href = 'new-event';
+  }
+
 }
