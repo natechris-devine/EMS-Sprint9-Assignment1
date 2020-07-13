@@ -1,0 +1,17 @@
+$pd: 2rem;
+
+.title-card {
+    .t-card{
+        padding-left: $pd;
+        padding-right: $pd;
+        padding-bottom: $pd;
+    }
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#t-title {
+    text-align: center;
+}

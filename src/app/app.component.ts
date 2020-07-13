@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
       icon: 'warning'
     }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public loggedIn = false;
 
   constructor(
     private platform: Platform,
@@ -60,8 +60,15 @@ export class AppComponent implements OnInit {
     });
   }
 
+  toggleLogin() {
+    this.loggedIn = this.loggedIn ? false : true;
+  }
+
   ngOnInit() {
     const path = window.location.pathname.split('folder/')[1];
+    this.toggleLogin();
+    this.toggleLogin();
+    console.log(this.loggedIn)
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }

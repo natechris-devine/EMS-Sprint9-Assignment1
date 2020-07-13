@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>New Event</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <form (ngSubmit)="processForm()">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Title <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" ionInpuy="handleFirstNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Description <ion-text color="danger">*</ion-text></ion-label>
+        <ion-textarea required type="text" ionInput="handleLastNameValue(event)"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Category <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" ionInput="handleEmailValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Start Date</ion-label>
+        <ion-datetime displayFormat="D/MM/YYYY H:mm"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">End Date</ion-label>
+        <ion-datetime displayFormat="D/MM/YYYY H:mm"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Cost <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="number" ionInput="handleEmailValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Venue</ion-label>
+        <ion-input type="text" ionInput="handleEmailValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Flyer</ion-label>
+        <ion-input type="text" ionInput="handleEmailValue(event)"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Create Event</ion-button>
+    </div>
+  </form>
+</ion-content>
+
